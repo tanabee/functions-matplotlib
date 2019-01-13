@@ -3,10 +3,11 @@ import matplotlib.pyplot
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from io import BytesIO
 import random
+import os
 
 def graph(request):
 
-    if request.args.get('token') != 'token123':
+    if request.args.get('token') != os.environ.get('TOKEN', 'token123'):
         return abort(403)
 
     fig, ax = matplotlib.pyplot.subplots()
