@@ -1,10 +1,13 @@
-from flask import make_response
+from flask import make_response, abort
 import matplotlib.pyplot
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from io import BytesIO
 import random
 
 def graph(request):
+
+    if request.args.get('token') != 'token123':
+        return abort(403)
 
     fig, ax = matplotlib.pyplot.subplots()
     ax.set_title(u'GRAPH')
