@@ -11,4 +11,4 @@ $ gcloud functions deploy graph --runtime python37 --trigger-http
 
 ## More information
 
-https://qiita.com/tanabee/2bfee85f9659be097750
+https://qiita.com/tanabee/items/2bfee85f9659be097750
