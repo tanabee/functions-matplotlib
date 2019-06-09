@@ -1,3 +1,6 @@
+## About
+Returns dynamically generated images in matplotlib for cloud functions HTTP requests
+
 ## Usage
 
 ```
